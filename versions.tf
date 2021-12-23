@@ -1,10 +1,13 @@
+# Terraform version
 terraform {
   required_version = ">= 1.0.0"
+}
 
+terraform {
   required_providers {
-    aws = {
-      source  = "hashicorp/aws"
-      version = ">= 3.30"
+    azurerm = {
+      source  = "hashicorp/azurerm"
+      version = ">=2.90.0"
     }
   }
 }
