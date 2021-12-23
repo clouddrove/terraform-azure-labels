@@ -3,7 +3,6 @@ provider "azurerm" {
   features {}
 }
 
-
 module "labels" {
   source = "./../"
 
