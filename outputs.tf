@@ -17,6 +17,12 @@ output "repository" {
   description = "Terraform current module repo"
 }
 
+output "business_unit" {
+  value       = local.business_unit
+  description = "Normalized business_unit"
+}
+
+
 output "environment" {
   value       = local.environment
   description = "Normalized environment"

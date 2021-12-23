@@ -22,19 +22,22 @@ locals {
 
   enabled = var.enabled
 
-  name        = var.enabled == true ? lower(format("%v", var.name)) : ""
-  environment = var.enabled == true ? lower(format("%v", var.environment)) : ""
-  managedby   = var.enabled == true ? lower(format("%v", var.managedby)) : ""
-  repository  = var.enabled == true ? lower(format("%v", var.repository)) : ""
-  delimiter   = var.enabled == true ? lower(format("%v", var.delimiter)) : ""
-  attributes  = var.enabled == true ? lower(format("%v", join(var.delimiter, compact(var.attributes)))) : ""
+  name          = var.enabled == true ? lower(format("%v", var.name)) : ""
+  environment   = var.enabled == true ? lower(format("%v", var.environment)) : ""
+  managedby     = var.enabled == true ? lower(format("%v", var.managedby)) : ""
+  repository    = var.enabled == true ? lower(format("%v", var.repository)) : ""
+  business_unit = var.enabled == true ? lower(format("%v", var.business_unit)) : ""
+  delimiter     = var.enabled == true ? lower(format("%v", var.delimiter)) : ""
+  attributes    = var.enabled == true ? lower(format("%v", join(var.delimiter, compact(var.attributes)))) : ""
 
   tags_context = {
     # For Azure we need `Name` to be disambiguated sine it has a special meaning
-    name        = local.id
-    environment = local.environment
-    managedby   = local.managedby
-    repository  = local.repository
+    name          = local.id
+    environment   = local.environment
+    managedby     = local.managedby
+    repository    = local.repository
+    business_unit = local.business_unit
+
   }
 
   generated_tags = { for l in keys(local.tags_context) : title(l) => local.tags_context[l] if length(local.tags_context[l]) > 0 }

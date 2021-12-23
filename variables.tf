@@ -18,6 +18,12 @@ variable "repository" {
   description = "Terraform current module repo"
 }
 
+variable "business_unit" {
+  type        = string
+  default     = "Corp"
+  description = "Top-level division of your company that owns the subscription or workload that the resource belongs to. In smaller organizations, this tag might represent a single corporate or shared top-level organizational element."
+}
+
 variable "label_order" {
   type        = list(any)
   default     = []
