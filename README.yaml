@@ -47,5 +47,5 @@ usage: |-
       extra_tags    = {
       Application   = "CloudDrove"
       }
-      }
+    }
     ```
