@@ -39,6 +39,7 @@ usage: |-
     ```hcl
     module "labels" {
       source        = "clouddrove/labels/azure"
+      version       = "1.0.0"
       name          = "labels"
       environment   = "test"
       label_order   = ["name", "environment"]
