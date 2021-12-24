@@ -81,7 +81,7 @@ Here is an example of how you can use this module in your inventory structure:
     extra_tags    = {
     Application   = "CloudDrove"
     }
-    }
+  }
   ```
 
 
