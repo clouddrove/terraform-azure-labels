@@ -9,7 +9,7 @@
 name: Terraform AZURE LABLES
 
 # License of this project
-license: "MIT"
+license: "APACHE"
 
 # Canonical GitHub repo
 github_repo: clouddrove/terraform-azure-labels
