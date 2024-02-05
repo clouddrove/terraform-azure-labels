@@ -13,8 +13,11 @@
 
 <p align="center">
 
-<a href="https://www.terraform.io">
-  <img src="https://img.shields.io/badge/Terraform-v1.0.0-green" alt="Terraform">
+<a href="https://github.com/clouddrove/terraform-azure-labels/releases/latest">
+  <img src="https://img.shields.io/github/release/clouddrove/terraform-azure-labels.svg" alt="Latest Release">
+</a>
+<a href="https://github.com/clouddrove/terraform-azure-labels/actions/workflows/tfsec.yml">
+  <img src="https://github.com/clouddrove/terraform-azure-labels/actions/workflows/tfsec.yml/badge.svg" alt="tfsec">
 </a>
 <a href="LICENSE.md">
   <img src="https://img.shields.io/badge/License-APACHE-blue.svg" alt="Licence">
@@ -51,12 +54,6 @@ We have [*fifty plus terraform modules*][terraform_modules]. A few of them are c
 
 This module has a few dependencies: 
 
-- [Terraform 1.x.x](https://learn.hashicorp.com/terraform/getting-started/install.html)
-- [Go](https://golang.org/doc/install)
-- [github.com/stretchr/testify/assert](https://github.com/stretchr/testify)
-- [github.com/gruntwork-io/terratest/modules/terraform](https://github.com/gruntwork-io/terratest)
-
-
 
 
 
@@ -70,7 +67,7 @@ This module has a few dependencies:
 
 ### Simple Example
 Here is an example of how you can use this module in your inventory structure:
-  ```hcl
+```hcl
   module "labels" {
     source        = "clouddrove/labels/azure"
     version       = "1.0.0"
@@ -83,7 +80,7 @@ Here is an example of how you can use this module in your inventory structure:
     Application   = "CloudDrove"
     }
   }
-  ```
+```
 
 
 
