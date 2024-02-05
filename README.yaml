@@ -39,7 +39,7 @@ include:
 usage: |-
   ### Simple Example
   Here is an example of how you can use this module in your inventory structure:
-    ```hcl
+  ```hcl
     module "labels" {
       source        = "clouddrove/labels/azure"
       version       = "1.0.0"
@@ -52,4 +52,4 @@ usage: |-
       Application   = "CloudDrove"
       }
     }
- ```
+  ```
