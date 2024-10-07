@@ -25,4 +25,3 @@
 | name | Normalized name. |
 | repository | Terraform current module repo |
 | tags | Normalized Tag map. |
-
