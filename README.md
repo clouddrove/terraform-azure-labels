@@ -43,6 +43,6 @@ module "example" {
 Going forward:
 
 - 🚀 **All issues, feature requests, and pull requests must be created in the new repository:**
-  **https://github.com/terraform-az-modules/MODULE_NAME**
+  **https://github.com/terraform-az-modules/terraform-azurerm-tags**
 
 - 📚 This old **CloudDrove** repository is now **read-only**, retained only for historical reference.
